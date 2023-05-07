@@ -9,7 +9,7 @@ using BenchmarkDotNet.Running;
 [RPlotExporter]
 public class Program
 {
-    public static void Main(string[] args) => BenchmarkRunner.Run<Program>(null, args);
+    public static void Main(string[] args) => BenchmarkRunner.Run<Program>(null!, args);
 
     private const int WAITS_PER_THREAD = 63;
 
